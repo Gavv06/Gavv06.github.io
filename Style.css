@@ -6,21 +6,32 @@ body {
     padding: 0;
 }
 
-h1 {
-    color: #4da3ff;
+/* Conteneur principal */
+.container {
+    text-align: center;
+    padding: 40px 20px;
 }
 
+/* Titre principal */
+h1 {
+    color: #4da3ff;
+    margin-bottom: 10px;
+}
+
+/* Sous-titres */
 h2 {
     margin-top: 40px;
     color: #dddddd;
 }
 
+/* Paragraphes */
 p {
     max-width: 700px;
     margin: 10px auto;
     line-height: 1.6;
 }
 
+/* Liens */
 a {
     color: #4da3ff;
     text-decoration: none;
@@ -28,4 +39,23 @@ a {
 
 a:hover {
     text-decoration: underline;
+}
+
+/* 📱 Adaptation mobile */
+@media (max-width: 600px) {
+    p {
+        max-width: 90%;
+    }
+
+    .container {
+        padding: 20px 15px;
+    }
+
+    h1 {
+        font-size: 1.6em;
+    }
+
+    h2 {
+        font-size: 1.2em;
+    }
 }
